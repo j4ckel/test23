@@ -23,6 +23,8 @@ namespace GUI
         public MainWindow()
         {
             InitializeComponent();
+            UCGUI ucg = new UCGUI();
+            MainGrid.Children.Add(ucg);
         }
     }
 }
