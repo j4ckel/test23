@@ -24,5 +24,13 @@ namespace BIZ
             }
         }
 
+        public void NewCalculator()
+        {
+            int tal1 = 55;
+            int tal2 = 77;
+            int talRes = tal1 + tal2;
+
+        }
+
     }
 }
