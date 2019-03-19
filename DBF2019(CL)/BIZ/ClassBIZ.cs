@@ -8,5 +8,11 @@ namespace BIZ
 {
     class ClassBIZ
     {
+
+        public ClassBIZ()
+        {
+
+        }
+
     }
 }
