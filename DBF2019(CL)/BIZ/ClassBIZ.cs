@@ -13,9 +13,6 @@ namespace BIZ
         {
 
         }
-        ~ClassBIZ()
-        {
 
-        }
     }
 }
