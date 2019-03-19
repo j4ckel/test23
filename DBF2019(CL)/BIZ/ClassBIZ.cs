@@ -14,5 +14,15 @@ namespace BIZ
 
         }
 
+        public void CountAlleNumbersFromOneToOnehundred()
+        {
+            string count = "";
+
+            for (int i = 1; i < 101; i++)
+            {
+                count = i.ToString();
+            }
+        }
+
     }
 }
