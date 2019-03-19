@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
 
 namespace BIZ
 {
@@ -14,17 +13,16 @@ namespace BIZ
         {
 
         }
-        public void counting()
+
+        public void CountAlleNumbersFromOneToOnehundred()
         {
             string count = "";
 
-            for (int i = 0; i < 100; i++)
+            for (int i = 1; i < 101; i++)
             {
                 count = i.ToString();
-                
             }
-            
         }
-        
+
     }
 }
