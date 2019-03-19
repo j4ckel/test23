@@ -44,5 +44,15 @@
     <Compile Include="ClassBIZ.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IO-DB\IO-DB.csproj">
+      <Project>{9931394a-69e0-41bf-b32f-ae8180ca3219}</Project>
+      <Name>IO-DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\REPO\REPO.csproj">
+      <Project>{6F36C261-8FDD-4D5D-90EE-5E397194195D}</Project>
+      <Name>REPO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

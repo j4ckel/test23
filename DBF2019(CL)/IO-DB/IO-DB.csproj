@@ -44,5 +44,11 @@
     <Compile Include="ClassIO-DB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\REPO\REPO.csproj">
+      <Project>{6f36c261-8fdd-4d5d-90ee-5e397194195d}</Project>
+      <Name>REPO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

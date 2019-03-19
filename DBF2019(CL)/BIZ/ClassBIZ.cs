@@ -1,4 +1,5 @@
-﻿using System;
+﻿using REPO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,13 +7,17 @@ using System.Threading.Tasks;
 
 namespace BIZ
 {
-    class ClassBIZ
+    public class ClassBIZ
     {
+        ClassREPO classrepo = new ClassREPO();
 
         public ClassBIZ()
         {
-
-        }       
-
+            
+        }   
+        public void repogetset()
+        {
+            
+        }
     }
 }

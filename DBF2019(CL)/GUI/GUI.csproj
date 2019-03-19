@@ -101,5 +101,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BIZ\BIZ.csproj">
+      <Project>{89d3a426-edc2-4810-a58f-d87b754c48d2}</Project>
+      <Name>BIZ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\REPO\REPO.csproj">
+      <Project>{6f36c261-8fdd-4d5d-90ee-5e397194195d}</Project>
+      <Name>REPO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
