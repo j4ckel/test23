@@ -19,7 +19,19 @@ namespace REPO
         private string _Titel;
         private int _ISBNNummer;
         #endregion
-        public ClassREPO(int inID , string inType, string inGenre, string inForlag,string inForfattere, DateTime inUdgivelsesDag, string inTitel, int inISBNNummer)
+        
+        public ClassREPO()
+        {
+            ID = 0;
+            Type = "";
+            Genre = "";
+            Forlag = "";
+            Forfattere = "";
+            UdgivelsesDag = DateTime.Now;
+            Titel = "";
+            ISBNNummer = 0;
+        }
+        public ClassREPO(int inID, string inType, string inGenre, string inForlag, string inForfattere, DateTime inUdgivelsesDag, string inTitel, int inISBNNummer)
         {
             inID = ID;
             inType = Type;
@@ -29,10 +41,6 @@ namespace REPO
             inUdgivelsesDag = UdgivelsesDag;
             inTitel = Titel;
             inISBNNummer = ISBNNummer;
-        }
-        public ClassREPO()
-        {
-
         }
         //Properties
         #region Properties
