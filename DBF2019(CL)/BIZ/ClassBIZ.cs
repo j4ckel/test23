@@ -29,6 +29,7 @@ namespace BIZ
             int tal1 = 55;
             int tal2 = 77;
             int talRes = tal1 + tal2;
+            String hest = "";
 
         }
 
