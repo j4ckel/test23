@@ -8,5 +8,9 @@ namespace IO_DB
 {
     class ClassIO_DB
     {
+        public ClassIO_DB()
+        {
+
+        }
     }
 }
