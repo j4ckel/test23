@@ -18,8 +18,10 @@ namespace REPO
         private DateTime _UdgivelsesDage;
         private string _Titel;
         private int _ISBNNummer;
+        private int _InKoebsPris;
         #endregion
-        
+        //Methode
+        #region Methode
         public ClassREPO()
         {
             ID = 0;
@@ -30,8 +32,9 @@ namespace REPO
             UdgivelsesDag = DateTime.Now;
             Titel = "";
             ISBNNummer = 0;
+            InKoebsPris = 0;
         }
-        public ClassREPO(int inID, string inType, string inGenre, string inForlag, string inForfattere, DateTime inUdgivelsesDag, string inTitel, int inISBNNummer)
+        public ClassREPO(int inID, string inType, string inGenre, string inForlag, string inForfattere, DateTime inUdgivelsesDag, string inTitel, int inISBNNummer,int inInKoebsPris)
         {
             inID = ID;
             inType = Type;
@@ -41,7 +44,9 @@ namespace REPO
             inUdgivelsesDag = UdgivelsesDag;
             inTitel = Titel;
             inISBNNummer = ISBNNummer;
+            inInKoebsPris = InKoebsPris;
         }
+        #endregion
         //Properties
         #region Properties
         public int ID
@@ -144,6 +149,19 @@ namespace REPO
                 {
                     _ISBNNummer = value;
                     Notify("ISBNNummer");
+
+                }
+            }
+        }  
+        public int InKoebsPris
+        {
+            get { return _InKoebsPris; }
+            set
+            {
+                if (value != _InKoebsPris)
+                {
+                    _InKoebsPris = value;
+                    Notify("InKoebsPris");
 
                 }
             }
